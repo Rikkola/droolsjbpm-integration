@@ -54,7 +54,7 @@ public class ContainerUpdateUiIntegrationTest extends JbpmKieServerBaseIntegrati
         createContainer(CONTAINER_ID, releaseId);
     }
 
-    @Test
+//    @Test
     public void testGetProcessFormAfterContainerUpdate() throws Exception {
         String result = uiServicesClient.getProcessForm(CONTAINER_ID, HIRING_PROCESS_ID, "en");
         assertNotNull(result);
@@ -92,7 +92,7 @@ public class ContainerUpdateUiIntegrationTest extends JbpmKieServerBaseIntegrati
         }
     }
 
-    @Test
+//    @Test
     public void testGetProcessImageViaUIClientTest() throws Exception {
         String originalResult = uiServicesClient.getProcessImage(CONTAINER_ID, HIRING_PROCESS_ID);
         assertNotNull(originalResult);
@@ -107,7 +107,7 @@ public class ContainerUpdateUiIntegrationTest extends JbpmKieServerBaseIntegrati
         assertNotEquals("Process image wasn't updated!", originalResult, updatedResult);
     }
 
-    @Test
+//    @Test
     public void testGetProcessInstanceImageViaUIClientTest() throws Exception {
         long processInstanceId = processClient.startProcess(CONTAINER_ID, HIRING_PROCESS_ID);
         assertTrue(processInstanceId > 0);

@@ -251,59 +251,6 @@
               </deployable>
             </deployables>
             <configuration>
-              <users>
-                <!-- kie-server role for REST tests; guest for JMS tests -->
-                <user>
-                  <name>yoda</name>
-                  <password>usetheforce123@</password>
-                  <roles>
-                    <role>kie-server</role>
-                    <role>guest</role>
-                  </roles>
-                </user>
-                <user>
-                  <name>administrator</name>
-                  <password>usetheforce123@</password>
-                  <roles>
-                    <role>kie-server</role>
-                    <role>guest</role>
-                    <role>Administrators</role>
-                  </roles>
-                </user>
-                <user>
-                  <name>second-administrator</name>
-                  <password>usetheforce123@</password>
-                  <roles>
-                    <role>kie-server</role>
-                    <role>guest</role>
-                    <role>Administrators</role>
-                  </roles>
-                </user>
-                <user>
-                  <name>john</name>
-                  <password>usetheforce123@</password>
-                  <roles>
-                    <role>kie-server</role>
-                    <role>guest</role>
-                    <role>engineering</role>
-                    <role>HR</role>
-                    <role>IT</role>
-                    <role>Accounting</role>
-                  </roles>
-                </user>
-                <user>
-                  <name>mary</name>
-                  <password>usetheforce123@</password>
-                  <roles>
-                    <role>kie-server</role>
-                    <role>guest</role>
-                    <role>engineering</role>
-                    <role>HR</role>
-                    <role>IT</role>
-                    <role>Accounting</role>
-                  </roles>
-                </user>
-              </users>
               <properties>
                 <cargo.wildfly.script.cli.embedded>${project.parent.basedir}/script/setup.cli</cargo.wildfly.script.cli.embedded>
                 <cargo.servlet.port>${container.port}</cargo.servlet.port>
